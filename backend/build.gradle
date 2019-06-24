@@ -33,4 +33,5 @@ dependencies {
     compile 'com.google.cloud:google-cloud-storage:1.66.0'
     testCompile('org.springframework.boot:spring-boot-starter-test')
     annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+    testCompile 'junit:junit:4.12'
 }
