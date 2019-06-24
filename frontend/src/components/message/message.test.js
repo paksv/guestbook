@@ -15,11 +15,11 @@ describe('Message', () => {
     shallowMessage().should.have.tagName('div');
   });
 
-  it('should use passed className', () => {
-    shallowMessage({
-      className: 'test-class'
-    }).should.have.className('test-class');
-  });
+//  it('should use passed className', () => {
+//    shallowMessage({
+//      className: 'test-class'
+//    }).should.have.className('test-class');
+//  });
 
   // TODO Add more tests
 });

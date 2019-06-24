@@ -12,7 +12,7 @@ export default class MessageList extends PureComponent {
   render() {
     const {children, className, messages, ...restProps} = this.props;
     const result = []
-    messages.forEach(m => result.push(<Message author={m.author} text={m.text} url={m.url} time={m.time} key={m.time}/>))
+    if (messages) messages.forEach(m => result.push(<Message author={m.author} text={m.text} url={m.url} time={m.time} key={m.time}/>))
     return (
       <div className='messageList'>
         {result.length > 0 && result}
