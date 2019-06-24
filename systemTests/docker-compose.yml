@@ -5,7 +5,7 @@ volumes:
 
 services:
   frontend:
-    build: frontend/docker
+    build: ../frontend/docker
     environment:
       API_URL: /entries
     ports:
@@ -18,7 +18,7 @@ services:
 
   backend:
     build: 
-      context: backend
+      context: ../backend
       dockerfile: Dockerfile
       args:
         JAR_FILE: build/libs/guestbook-0.1.0.jar
@@ -37,7 +37,7 @@ services:
       - db
 
   db:
-    build: database
+    build: ../database
     ports:
       - "5432:5432"
     environment:
