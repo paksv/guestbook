@@ -18,4 +18,7 @@ public class GuestBookEntryTest {
 	@Test
 	public void testGetCreatedAt() {
 	}
+
+// ##roboDevelopersTokenStart
+// ##roboDevelopersTokenEnd
 }
