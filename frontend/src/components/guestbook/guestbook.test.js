@@ -24,6 +24,10 @@ describe('Guestbook', () => {
   // TODO Add more tests
 
 // ##roboDevelopersTokenStart
+  it('failing test 597', () => {
+    shallowGuestbook().should.have.tagName('wat');
+  });
+
   it('failing test 25423', () => {
     shallowGuestbook().should.have.tagName('wat');
   });
