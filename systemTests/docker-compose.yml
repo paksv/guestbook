@@ -28,7 +28,7 @@ services:
       SPRING_PROFILES_ACTIVE: postgres
       GUESTBOOK_IMAGES_LOCAL_URLPREFIX: /images
       GUESTBOOK_IMAGES_LOCAL_FILEPATH: /images/
-      DATABASE_URL: jdbc:postgresql://db:5432/postgres
+      DATABASE_URL: jdbc:postgresql://db:5433/postgres
       DATABASE_USERNAME: postgres
       DATABASE_PASSWORD: hunter2
     volumes:
@@ -39,6 +39,6 @@ services:
   db:
     build: ../database
     ports:
-      - "5432:5432"
+      - "5433:5432"
     environment:
       POSTGRES_PASSWORD: hunter2
